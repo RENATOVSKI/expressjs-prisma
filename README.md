@@ -8,26 +8,12 @@ tags:
   - typescript
 ---
 
-# ExpressJS Prisma Example
-
-This is an [ExpressJS](https://expressjs.com/) REST API that uses [Prisma](https://www.prisma.io/) to connect to a Postgres database and CRUD todos.
-
-[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new?template=https%3A%2F%2Fgithub.com%2Frailwayapp%2Fexamples%2Ftree%2Fmaster%2Fexamples%2Fexpressjs-prisma&plugins=postgresql)
-
 ## ✨ Features
 
 - Prisma
 - Express
 - Postgres
 - TypeScript
-
-## 💁‍♀️ How to use
-
-- Install dependencies `yarn`
-- [Provision a Postgres container on Railway](https://dev.new)
-- Connect to your Railway project with `railway link`
-- Migrate the database `railway run yarn migrate:dev`
-- Run the Server app `railway run yarn dev`
 
 ## 📝 Notes
 
@@ -38,3 +24,18 @@ This is a simple REST API for todo items. The available routes are
 - `GET /todos/:id` gets a todo by id
 - `PUT /todos/:id` updates a todo by id
 - `DELETE /todos/:id` deletes a todo by id
+
+## 📝 Responsabilidades
+
+This is a simple REST API for todo items. The available routes are
+
+- `index` inicializa o servidor
+- `express` ...
+- `database`  ...
+- `routes` cria diretório endpoint
+- `controllers` armazena cache da requisição feita
+- `services` ...
+- `middleware` ...
+- `env` armazena infos sensíveis de acesso ao db, arquivo oculto
+- `lib` bibliotecas extras, cache das requisições do db com Redis
+- `package.json` armazena infos do setup do servidor
